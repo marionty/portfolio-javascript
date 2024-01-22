@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>Experiences</title>
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./asset/page/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./asset/page/logo.png"
+    />
+    <link rel="shortcut icon" href="./asset/page/petitlogo.png" />
+    <!-- metatag -->
+
+    <!-- main style -->
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/button.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header id="headermain">
+      <label for="switch" class="switch-label">
+        <input type="checkbox" id="switch" />
+        <span class="switch"></span>
+      </label>
+      <div class="headerwrap__logo">
+        <img
+          src="./asset/page/logo.png"
+          alt="logo"
+          class="img-fluid-logo"
+        />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-2">
+            <!-- wrap logo -->
+            
+            <!-- end wrap logo -->
+            <!-- navigation icon -->
+            <div class="navicon d-block d-lg-none">
+              <div class="navicon__bar"></div>
+            </div>
+            <!-- end navigation icon -->
+          </div>
+          <div
+            class="col-lg-10 text-xl-left d-none d-lg-block justify-content-lg-left justify-content-xl-left"
+          >
+            <!-- navigation desktop -->
+            <nav class="navpage text-left">
+              <ul class="navpage__wrap">
+                <li class="navpage__list">
+                  <a href="#sectionhero" class="activelink">Intro.</a>
+                </li>
+                <li class="navpage__list">
+                  <a href="#aboutsection">About Me.</a>
+                </li>
+                <li class="navpage__list">
+                  <a href="#skillssection">Skills.</a>
+                </li>
+                <li class="navpage__list">
+                  <a href="#experiencessection">Experiences.</a>
+                </li>
+                <li class="navpage__list">
+                  <a href="#contactsection">Contact.</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- end navigation desktop -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- mobile nav -->
+    <div class="overlay">
+      <div class="overlay__navigation">
+        <ul class="overlay__listnav">
+          <li class="navpage__list"><a href="#herosection">Intro.</a></li>
+          <li><a href="#aboutsection">About Me.</a></li>
+          <li><a href="#skillssection">Skills.</a></li>
+          <li><a href="#experiencessection">Experiences.</a></li>
+          <li><a href="#contactsection">Contact.</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end mobile nav -->
+    <!-- PRELOADER -->
+    <div class="preloader">
+      <div class="preloader__img">
+        <img src="./asset/page/logo.png" alt="logopage" class="img-fluid" />
+      </div>
+    </div>
+    <!-- main wrap -->
+    <main id="mainwrap">
+      <!-- section hero -->
+      <div id="sectionhero" class="sectionblock">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 pr-0 mr-0 pl-lg-0 pr-lg-5 mr-lg-0 mt-3 mt-lg-0 align-items-center justify-content-center align-items-lg-left justify-content-lg-left text-center text-lg-left d-flex order-1 order-lg-0"
+            >
+              <div class="infohero">
+                <p class="infohero__p">Hello, I'm</p>
+                <h1 class="infohero__title">
+                  Marion
+                  <span>Tytgat</span>
+                </h1>
+                <span id="typed-text"></span>
+                <span class="cursor blink">&nbsp;</span>
+                <div class="infoabout__list">
+                  <div class="infoabout__wrap">
+                    <span class="mt-4 mb-2 d-block infoabout__title">
+                      <a href="mailto:marion.tytgat@gmail.com">
+                        <i
+                          class="fa fa-envelope"
+                          style="color: #d416de"
+                        ></i> </a
+                    ></span>
+                  </div>
+                  <div class="infoabout__wrap">
+                    <span class="mt-4 mb-2 d-block infoabout__title">
+                      <a
+                        href="https://www.linkedin.com/in/tytgatmarion/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i
+                          class="fa-brands fa-linkedin"
+                          style="color: #d416de"
+                        ></i>
+                      </a>
+                    </span>
+                  </div>
+                  <div class="infoabout__wrap">
+                    <span class="mt-4 mb-2 d-block infoabout__title">
+                      <a
+                        href="https://github.com/marionty"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i
+                          class="fa-brands fa-github"
+                          style="color: #d416de"
+                        ></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center order-0 order-lg-1 mb-5 mb-lg-0">
+              <div class="heroimg">
+                <img
+                  src="./asset/hero/profil.png"
+                  alt="poto"
+                  class="img-fluid heroimg__poto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,128L60,149.3C120,171,240,213,360,192C480,171,600,85,720,85.3C840,85,960,171,1080,197.3C1200,224,1320,192,1380,176L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+      <!-- end section hero -->
+      <!-- about section -->
+      <div id="aboutsection" class="sectionblock">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 text-center text-lg-left">
+              <div class="abouthero">
+                <h3>About me</h3>
+              </div>
+            </div>
+            <div class="col-lg-8 pl-lg-5 text-center text-lg-left">
+              <div class="infoabout">
+                <p class="infoabout__title">
+                  <span class="infoabout__short-text">
+                    <div class="infoabout__soustitle">
+                      Bonjour et bienvenue dans mon univers !
+                    </div>
+                    <br />
+
+                    Je suis un véritable caméléon professionnel, ayant passé
+                    environ 10 ans dans le monde chatoyant du prêt-à-porter et
+                    même quelques escapades dans le secteur médical. Mais un
+                    jour, j'ai décidé de prendre une tangente audacieuse vers le
+                    <strong>développement web et mobile.</strong> <br />
+                    <br />
+                    Tout a commencé en mai 2022, lorsque j'ai eu la chance de
+                    participer à une initiation en HTML et CSS. C'était comme
+                    ouvrir un coffre au trésor rempli de balises énigmatiques et
+                    de styles éblouissants. J'ai été immédiatement captivée et
+                    j'ai su que je tenais là ma prochaine grande aventure.
+                    <br />
+                    <br />
+                  </span>
+                  <span class="infoabout__full-text">
+                    Depuis février 2023, je suis en formation de
+                    <strong>développeur web et mobile.</strong> Je suis encore
+                    aux premiers pas de mon parcours, découvrant avec
+                    émerveillement les langages du front-end et du back-end.
+                    C'est comme explorer une jungle mystérieuse remplie de
+                    <strong> JavaScript, PHP </strong> et autres créatures de
+                    code étranges. Mais je suis prête à relever tous les défis !
+                    <br />
+                    <br />
+                    En août, je commence un stage de deux mois et demi, une
+                    véritable expédition au cœur du monde professionnel du
+                    <strong>développement web.</strong> C'est l'occasion idéale
+                    pour moi d'explorer davantage ce domaine, de développer mes
+                    compétences et de vivre de nouvelles aventures. Je vous
+                    invite à me suivre dans cette incroyable aventure. Sur mon
+                    <strong>portfolio</strong> , vous découvrirez mes premières
+                    créations, fruits de mes explorations et de mon
+                    apprentissage. C'est un peu comme un carnet de voyage
+                    numérique où je partage mes découvertes avec vous. <br />
+                    <br />
+                    Alors, attachez vos ceintures et préparez-vous à explorer le
+                    <strong>monde du web </strong>à mes côtés. Même si je suis
+                    une débutante, je suis animée d'une curiosité sans limites
+                    et d'une envie constante d'apprendre et de grandir.
+                    Ensemble, nous allons plonger dans cet océan numérique et
+                    découvrir de nouvelles contrées fascinantes ! <br />
+                    <br />
+                    Que l'aventure commence !
+                  </span>
+                </p>
+                <button class="infoabout__button">Lire la suite</button>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+      <!-- end about -->
+      <!-- skills section -->
+      <div id="skillssection" class="sectionblock">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,96L60,117.3C120,139,240,181,360,186.7C480,192,600,160,720,138.7C840,117,960,107,1080,117.3C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+          ></path>
+        </svg>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="skillssection">
+                <h3 class="text-center text-lg-left">Skills</h3>
+              </div>
+              <div
+                id="sliderskills"
+                class="sliderskills__contentinner keen-slider"
+              >
+                <div
+                  class="wrapskills keen-slider__slide text-center text-lg-left"
+                >
+                  <i class="fab fa-html5"></i>
+                  <h3 class="mt-3 wrapskills__title">HTML</h3>
+                  <p>
+                    HTML(HyperText Markup Language) est le langage de balisage
+                    standard utilisé pour créer la structure et le contenu d'une
+                    page web. Il est utilisé pour définir la structure des
+                    éléments tels que les titres, les paragraphes, les liens,
+                    les images, etc.
+                  </p>
+                </div>
+                <div
+                  class="wrapskills keen-slider__slide text-center text-lg-left"
+                >
+                  <i class="fab fa-css3-alt"></i>
+                  <h3 class="mt-3 wrapskills__title">CSS</h3>
+                  <p>
+                    CSS(Cascading Style Sheets) est un langage utilisé pour
+                    définir l'apparence et la mise en page d'une page web. Il
+                    permet de spécifier les couleurs, les polices, les marges,
+                    les bordures et d'autres propriétés visuelles des éléments
+                    HTML.
+                  </p>
+                </div>
+                <div
+                  class="wrapskills keen-slider__slide text-center text-lg-left"
+                >
+                  <i class="fab fa-js"></i>
+                  <h3 class="mt-3 wrapskills__title">JAVASCRIPT</h3>
+                  <p>
+                    JavaScript est un langage de programmation côté client
+                    utilisé pour rendre les pages web interactives. Il permet
+                    d'ajouter des fonctionnalités dynamiques aux sites web, de
+                    manipuler le contenu de la page, de répondre aux actions de
+                    l'utilisateur et de communiquer avec le serveur.
+                  </p>
+                </div>
+                <div
+                  class="wrapskills keen-slider__slide text-center text-lg-left"
+                >
+                  <i class="fab fa-php"></i>
+                  <h3 class="mt-3 wrapskills__title">PHP</h3>
+                  <p>
+                    PHP est un langage de programmation côté serveur
+                    principalement utilisé pour développer des applications web
+                    dynamiques. Il est intégré dans le code HTML et peut être
+                    utilisé pour générer des pages web dynamiques, interagir
+                    avec des bases de données et traiter des formulaires.
+                  </p>
+                </div>
+                <div
+                  class="wrapskills keen-slider__slide text-center text-lg-left"
+                >
+                  <i class="fab fa-react"></i>
+                  <h3 class="mt-3 wrapskills__title">REACT</h3>
+                  <p>
+                    React est une bibliothèque JavaScript développée par
+                    Facebook. Elle est utilisée pour construire des interfaces
+                    utilisateur interactives et réactives. React utilise un
+                    concept appelé "composants" pour organiser le code et
+                    faciliter la réutilisabilité. Il est souvent utilisé pour
+                    créer des applications web à une seule page (Single-Page
+                    Applications).
+                  </p>
+                </div>
+                <div
+                  class="wrapskills keen-slider__slide text-center text-lg-left"
+                >
+                  <i class="fab fa-symfony"></i>
+                  <h3 class="mt-3 wrapskills__title">SYMFONY</h3>
+                  <p>
+                    Symfony est un framework PHP open-source et robuste utilisé
+                    pour développer des applications web. Il suit le principe de
+                    conception du modèle MVC (Modèle-Vue-Contrôleur) pour
+                    séparer la logique métier, la présentation et la gestion des
+                    requêtes. Symfony offre une large gamme de fonctionnalités
+                    et de composants pour accélérer le processus de
+                    développement.
+                  </p>
+                </div>
+                <div
+                  class="wrapskills keen-slider__slide text-center text-lg-left"
+                >
+                  <i class="fab fa-node-js"></i>
+                  <h3 class="mt-3 wrapskills__title">NODE JS</h3>
+                  <p>
+                    Node.js est un environnement d'exécution côté serveur basé
+                    sur le moteur JavaScript V8 de Chrome. Il permet d'exécuter
+                    du code JavaScript côté serveur, ce qui ouvre de nouvelles
+                    possibilités pour le développement web. Node.js est souvent
+                    utilisé pour créer des serveurs web rapides et évolutifs,
+                    ainsi que des applications réseau en temps réel.
+                  </p>
+                </div>
+                <div
+                  class="wrapskills keen-slider__slide text-center text-lg-left"
+                >
+                  <i class="fab fa-wordpress"></i>
+                  <h3 class="mt-3 wrapskills__title">WORDPRESS</h3>
+                  <p>
+                    WordPress est un système de gestion de contenu (CMS)
+                    open-source largement utilisé pour créer des sites web et
+                    des blogs. Il offre une interface conviviale pour la
+                    création et la gestion de contenu, ainsi qu'une multitude de
+                    thèmes et de plugins pour personnaliser et étendre les
+                    fonctionnalités du site.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skillssection">
+            <h3 class="text-center text-lg-left">Soft Skills</h3>
+            <br />
+            <div class="btn-12">Problem Solving</div>
+            <div class="btn-13">Team Work</div>
+            <div class="btn-12">Communication</div>
+            <div class="btn-13">Adaptability</div>
+          </div>
+          <div class="skillssection">
+            <div class="btn-12">Dynamic</div>
+            <div class="btn-13">Creativity</div>
+            <div class="btn-12">Organizationel</div>
+            <div class="btn-13">Curious</div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,96L60,117.3C120,139,240,181,360,197.3C480,213,600,203,720,186.7C840,171,960,149,1080,160C1200,171,1320,213,1380,234.7L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- end skills section -->
+      <!-- Experiences section -->
+      <div id="experiencessection" class="sectionblock">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <!-- filter Experiences -->
+              <div class="warpfilter text-left">
+                <ul
+                  id="filterwrap"
+                  class="warpfilter__filter justify-content-left text-center text-lg-left"
+                >
+                  <li data-group="all" class="active">ALL</li>
+                  <li data-group="web">Education</li>
+                  <li data-group="branding">Experiences</li>
+                </ul>
+              </div>
+              <!-- end filter Experiences -->
+              <div id="experienceswarp" class="grid-gutter-md grid-col-3">
+                <!--  Experiences ITEM -->
+                <div class="experienceswarp__item" data-groups='["branding"]'>
+                  <a
+                    class="experienceswarp__portolink glightbox"
+                    data-glightbox="type: image"
+                    href="./asset/experiences/audioprothesiste.png"
+                  >
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <div
+                      class="experienceswarp__content"
+                      style="
+                        background: url(./asset/experiences/audioprothesiste.png) no-repeat
+                          center;
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    ></div>
+                  </a>
+                </div>
+                <!-- END experiences ITEM -->
+                <!--  Experiences ITEM -->
+                <div class="experienceswarp__item" data-groups='["branding"]'>
+                  <a
+                    class="experienceswarp__portolink glightbox"
+                    data-glightbox="type: image"
+                    href="./asset/experiences/manager.png"
+                  >
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <div
+                      class="experienceswarp__content"
+                      style="
+                        background: url(./asset/experiences/manager.png) no-repeat
+                          center;
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    ></div>
+                  </a>
+                </div>
+                <!-- END experiences ITEM -->
+                
+                <!--  experiences ITEM -->
+                <div class="experienceswarp__item" data-groups='["web"]'>
+                  <a
+                    class="experienceswarp__portolink glightbox"
+                    data-glightbox="type: image"
+                    href="./asset/experiences/dev.png"
+                  >
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <div
+                      class="experienceswarp__content"
+                      style="
+                        background: url(./asset/experiences/dev.png) no-repeat
+                          center;
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    ></div>
+                  </a>
+                </div>
+                <!-- END experiences ITEM -->
+                <!--  experiences ITEM -->
+                <div class="experienceswarp__item" data-groups='["web"]'>
+                  <a
+                    class="experienceswarp__portolink glightbox"
+                    data-glightbox="type: image"
+                    href="./asset/experiences/bts.png"
+                  >
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <div
+                      class="experienceswarp__content"
+                      style="
+                        background: url(./asset/experiences/bts.png) no-repeat
+                          center;
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    ></div>
+                  </a>
+                </div>
+                <!-- END experiences ITEM -->
+                <!--  experiences ITEM -->
+                <div class="experienceswarp__item" data-groups='["web"]'>
+                  <a
+                    class="experienceswarp__portolink glightbox"
+                    data-glightbox="type: image"
+                    href="./asset/experiences/bac.png"
+                  >
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <div
+                      class="experienceswarp__content"
+                      style="
+                        background: url(./asset/experiences/bac.png) no-repeat
+                          center;
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    ></div>
+                  </a>
+                </div>
+                <!-- END experiences ITEM -->
+                <!--  experiences ITEM -->
+                <div class="experienceswarp__item" data-groups='["branding"]'>
+                  <a
+                    class="experienceswarp__portolink glightbox"
+                    data-glightbox="type: image"
+                    href="./asset/experiences/dentaire.png"
+                  >
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <div
+                      class="experienceswarp__content"
+                      style="
+                        background: url(./asset/experiences/dentaire.png) no-repeat
+                          center;
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    ></div>
+                  </a>
+                </div>
+                <!-- END Experiences ITEM -->
+                <!--  experiences ITEM -->
+                <div class="experienceswarp__item" data-groups='["branding"]'>
+                  <a
+                    class="experienceswarp__portolink glightbox"
+                    data-glightbox="type: image"
+                    href="./asset/experiences/visual.png"
+                  >
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <div
+                      class="experienceswarp__content"
+                      style="
+                        background: url(./asset/experiences/visual.png) no-repeat
+                          center;
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    ></div>
+                  </a>
+                </div>
+                <!-- END Experiences ITEM -->
+                <!--  experiences ITEM -->
+                <div class="experienceswarp__item" data-groups='["branding"]'>
+                  <a
+                    class="experienceswarp__portolink glightbox"
+                    data-glightbox="type: image"
+                    href="./asset/experiences/adjointe.png"
+                  >
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <div
+                      class="experienceswarp__content"
+                      style="
+                        background: url(./asset/experiences/adjointe.png) no-repeat
+                          center;
+                        background-position: center;
+                        background-size: cover;
+                      "
+                    ></div>
+                  </a>
+                </div>
+                <!-- END Experiences ITEM -->
+                <!--  experiences ITEM -->
+                <div class="experienceswarp__item" data-groups='["all"]'>
+                  <a class="experienceswarp__portolink glightboxcontainer" href="https://codepen.io/mariontyt/pen/bGQYaLw" target="_blank">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <div class="experienceswarp__content" style="background: url(./asset/experiences/jeuvideo.png) no-repeat center; background-position: center; background-size: cover;">
+                    
+                    </div>
+                  </a>
+                </div>
+                
+                <!-- END experiences ITEM -->
+              </div>
+              <div class="container">
+
+                <a href="./asset/experiences/cv.pdf" class="button" download>
+                    <ul>
+                        <li>&#68;ownload</li>
+                        <li>&#68;ownloading</li>
+                        <li>download complete</li>
+                    </ul>
+                    <div>
+                        <svg viewBox="0 0 24 24"></svg>
+                    </div>
+                </a>
+        
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end Experiences section -->
+      <!-- contact section -->
+      <div id="contactsection" class="sectionblock">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,96L60,117.3C120,139,240,181,360,186.7C480,192,600,160,720,138.7C840,117,960,107,1080,117.3C1200,128,1320,160,1380,176L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+          ></path>
+        </svg>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 pr-lg-5">
+              <div class="contactdetail">
+                <h3 class="contactdetail__title mb-4 text-center text-lg-left">Send me a message</h3>
+                <p class="text-center text-lg-left">
+                  Feel free to contact me via my email address or follow me on
+                  LinkedIn and GitHub. I would be delighted to discuss with you
+                  and share this common passion for development.
+                </p>
+                <ul class="contactdetail__list">
+                  <li>
+                    <span class="contactdetail__span"> </span>
+                  </li>
+                  <li>
+                    <span class="contactdetail__span text-center text-lg-left">
+                      marion.tytgat@gmail.com
+                    </span>
+                  </li>
+                </ul>
+                <ul class="contactdetail__sosmed">
+                  <li>
+                    <a href="https://www.linkedin.com/in/tytgatmarion/">
+                      <i
+                        class="fa-brands fa-linkedin"
+                        style="color: #d416de"
+                      ></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/marionty">
+                      <i class="fa-brands fa-github" style="color: #d416de"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="contactform">
+                <!-- form contact -->
+                <form action="contact.php" id="formcontact" class="contactform" method="POST" novalidate>
+                  <!-- input contact wrap -->
+                  <div class="contactform__form-group row">
+                    <div class="col-lg-12 pt-4">
+                      <label for="yourname" class="pb-2">Input your name</label>
+                      <input
+                        type="text"
+                        id="yourname"
+                        class="contactform__inputtext input-control"
+                        placeholder="Your name"
+                        name="name"
+                        data-name="name"
+                        required
+                      />
+                    </div>
+                    <!-- input contact wrap -->
+                    <div class="col-lg-12 pt-4">
+                      <label for="yourmail" class="pb-2">Input your mail</label>
+                      <input
+                        type="email"
+                        id="yourmail"
+                        class="contactform__inputtext input-control"
+                        placeholder="Your email address"
+                        name="email"
+                        data-name="email"
+                        required
+                      />
+                    </div>
+                    <!-- input contact wrap -->
+                    <div class="col-lg-12 pt-4">
+                      <label for="comment" class="pb-2">Input your message</label>
+                      <textarea
+                        class="contactform__comentarea input-control"
+                        id="comment"
+                        placeholder="Your comment"
+                        name="comment"
+                        data-name="comment"
+                        required
+                      ></textarea>
+            
+                      <button
+                        id="submitbutton"
+                        class="btn mt-5 contactform__submitbuton linkbtn mt-5 mb-3"
+                        type="submit"
+                      >
+                        Submit now
+                      </button>
+                      <div id="customModal" class="modal">
+                        <div class="modal-content">
+                          <span class="close-btn">&times;</span>
+                          <div class="modal-content__wrapper">
+                            <p id="modalMessage"></p>
+                            <img src="./asset/page/avatartete.png" alt="Votre image" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+      <!-- end contact section -->
+    </main>
+    <!-- end main wrap -->
+    <!-- footer section -->
+    <footer id="footerwrap" class="pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center footwrap">
+            <a href="#sectionhero">
+              <img src="./asset/page/logo.png" alt="logo" class="logofooter" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer section-->
+
+    <!-- script -->
+    <a class="dribbble" href="https://dribbble.com/shots/7299868-Download-Buttons" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt=""></a>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js%22%3E"></script>
+    
+    <!-- keen slider -->
+    <script src="./javascript/vendor/keen-slider.js"></script>
+    <!-- glightbox -->
+    <script src="./javascript/vendor/glightbox.js"></script>
+    <!-- shufle -->
+    <script src="./javascript/vendor/shufle.js"></script>
+
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>

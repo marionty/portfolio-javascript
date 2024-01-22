@@ -1,0 +1,1067 @@
+/*
+
+* ----------------------------------------------------------------------------------------
+  TABLE OF CONTENT
+* ----------------------------------------------------------------------------------------
+* 01.BASE CSS. 
+    - loadder 
+* 02.HEADER SECTION.
+    - navigation 
+* 03.HERO SECTION. 
+* 04.ABOUT SECTION.
+* 05.skills SECTION.
+* 06.Experiences SECTION.
+* 07.CONTACT SECTION.
+* 08.FOOTER SECTION. 
+* ----------------------------------------------------------------------------------------
+*/
+
+@import url(./vendor/bootstrap/bootstrap.css);
+@import url(./vendor/fontawesome/all.min.css);
+@import url(./vendor/keen-slider.css);
+@import url(./vendor/glightbox.css);
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/Poppins-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../font/Poppins-SemiBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/Poppins-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 01.BASE CSS. 
+* ----------------------------------------------------------------------------------------
+*/
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 400;
+  background: #ffdb67;
+  color: #181715;
+  text-rendering: optimizeLegibility;
+}
+.dark-mode {
+  background: #181715;
+}
+
+::selection {
+  background: #ddaa01;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.fixid {
+  background: #ffdb67;
+  box-shadow: 0 0 10px 5px rgba(221, 170, 1, 0.3);
+}
+.dark-mode .fixid {
+  background-color: #000000;
+}
+label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 13px;
+  width: 100%;
+  color: #181715;
+  background: transparent;
+  border: 2px solid rgba(25, 26, 30, 0.5);
+  border-radius: 3px;
+}
+.dark-mode input {
+  background-color: white;
+}
+.dark-mode textarea {
+  background-color: white;
+}
+
+textarea {
+  height: 150px;
+}
+
+.goverlay {
+  background: #ffdb67;
+}
+
+.linkbtn {
+  background: #181715;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.dark-mode .linkbtn {
+  color: black;
+  background-color: white;
+}
+
+.linkbtn:hover {
+  color: #ffffff;
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  padding: 5px 0;
+  justify-content: center;
+}
+
+.dot {
+  border: none;
+  width: 20px;
+  height: 2px;
+  background: #ddaa01;
+  border-radius: 3px;
+  margin: 10px 5px;
+  padding: 3px;
+  cursor: pointer;
+}
+.dark-mode .dot {
+  background-color: #d416de;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot--active {
+  background: #181715;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.BASE CSS. 
+- preloader
+* ----------------------------------------------------------------------------------------
+*/
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999999999 !important;
+  background-color: #ddaa01;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.preloader .preloader__img {
+  display: inline-block;
+  position: absolute;
+  width: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 02.HEADER SECTION. 
+* ----------------------------------------------------------------------------------------
+*/
+
+#headermain {
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.img-fluid-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+@import "compass/css3";
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+#switch {
+  visibility: hidden;
+  clip: rect(0 0 0 0);
+}
+.switch-label{
+  margin-left: 23px;
+}
+.switch {
+  position: absolute;
+  top: 25px;
+  width: 40px;
+  height: 20px;
+  background: #ced8da; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #ced8da 0%,
+    #d8e0e3 29%,
+    #ccd4d7 34%,
+    #d4dcdf 62%,
+    #fff9f4 68%,
+    #e1e9ec 74%,
+    #b7bfc2 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0%, #ced8da),
+    color-stop(29%, #d8e0e3),
+    color-stop(34%, #ccd4d7),
+    color-stop(62%, #d4dcdf),
+    color-stop(68%, #fff9f4),
+    color-stop(74%, #e1e9ec),
+    color-stop(100%, #b7bfc2)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    left,
+    #ced8da 0%,
+    #d8e0e3 29%,
+    #ccd4d7 34%,
+    #d4dcdf 62%,
+    #fff9f4 68%,
+    #e1e9ec 74%,
+    #b7bfc2 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    left,
+    #ced8da 0%,
+    #d8e0e3 29%,
+    #ccd4d7 34%,
+    #d4dcdf 62%,
+    #fff9f4 68%,
+    #e1e9ec 74%,
+    #b7bfc2 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    left,
+    #ced8da 0%,
+    #d8e0e3 29%,
+    #ccd4d7 34%,
+    #d4dcdf 62%,
+    #fff9f4 68%,
+    #e1e9ec 74%,
+    #b7bfc2 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to right,
+    #ced8da 0%,
+    #d8e0e3 29%,
+    #ccd4d7 34%,
+    #d4dcdf 62%,
+    #fff9f4 68%,
+    #e1e9ec 74%,
+    #b7bfc2 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ced8da', endColorstr='#b7bfc2',GradientType=1 ); /* IE6-9 */
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  border-radius: 0.35em;
+  box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.7),
+    inset 0 2px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 0 1px rgba(0, 0, 0, 0.3), 0 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+.switch:before {
+  display: block;
+  position: absolute;
+  left: -35px;
+  right: -35px;
+  top: -25px;
+  bottom: -25px;
+  z-index: -2;
+  content: "";
+  border-radius: 0.4em;
+  background: #d5dde0;
+  background: linear-gradient(#d7dfe2, #bcc7cd);
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -1px 1px 1px rgba(0, 0, 0, 0.3), 0 0 8px 2px rgba(0, 0, 0, 0.2),
+    0 2px 4px 2px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+}
+
+.switch:after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #788b91;
+  margin-top: -8px;
+  z-index: -1;
+  box-shadow: inset 0 -1px 8px rgba(0, 0, 0, 0.7),
+    inset 0 -2px 2px rgba(0, 0, 0, 0.2), 0 1px 0 white,
+    0 -1px 0 rgba(0, 0, 0, 0.5), -47px 32px 15px 13px rgba(0, 0, 0, 0.25);
+}
+
+#switch:checked ~ .switch {
+  background: #b7bfc2; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #b7bfc2 0%,
+    #e1e9ec 26%,
+    #fff9f4 32%,
+    #d4dcdf 38%,
+    #ccd4d7 66%,
+    #d8e0e3 71%,
+    #ced8da 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0%, #b7bfc2),
+    color-stop(26%, #e1e9ec),
+    color-stop(32%, #fff9f4),
+    color-stop(38%, #d4dcdf),
+    color-stop(66%, #ccd4d7),
+    color-stop(71%, #d8e0e3),
+    color-stop(100%, #ced8da)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    left,
+    #b7bfc2 0%,
+    #e1e9ec 26%,
+    #fff9f4 32%,
+    #d4dcdf 38%,
+    #ccd4d7 66%,
+    #d8e0e3 71%,
+    #ced8da 100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    left,
+    #b7bfc2 0%,
+    #e1e9ec 26%,
+    #fff9f4 32%,
+    #d4dcdf 38%,
+    #ccd4d7 66%,
+    #d8e0e3 71%,
+    #ced8da 100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(
+    left,
+    #b7bfc2 0%,
+    #e1e9ec 26%,
+    #fff9f4 32%,
+    #d4dcdf 38%,
+    #ccd4d7 66%,
+    #d8e0e3 71%,
+    #ced8da 100%
+  ); /* IE10+ */
+  background: linear-gradient(
+    to right,
+    #b7bfc2 0%,
+    #e1e9ec 26%,
+    #fff9f4 32%,
+    #d4dcdf 38%,
+    #ccd4d7 66%,
+    #d8e0e3 71%,
+    #ced8da 100%
+  ); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7bfc2', endColorstr='#ced8da',GradientType=1 ); /* IE6-9 */
+}
+
+#switch:checked ~ .switch:after {
+  background: #d416de;
+  box-shadow: inset 0 -1px 8px rgba(0, 0, 0, 0.7),
+    inset 0 -2px 2px rgba(0, 0, 0, 0.2), 0 1px 0 white,
+    0 -1px 0 rgba(0, 0, 0, 0.5), -110px 32px 15px 13px rgba(0, 0, 0, 0.25);
+}
+
+.dark-mode #switch:checked ~ .switch {
+  background: #b7bfc2; /* Old browsers */
+  /* Styles de gradient inchangés, mais pour le mode "dark" */
+  /* ... */
+}
+
+.dark-mode #switch:checked ~ .switch:before {
+  background: #d5dde0;
+  background: linear-gradient(#bcc7cd, #d7dfe2);
+  /* Styles de gradient inchangés, mais pour le mode "dark" */
+  /* ... */
+}
+
+.dark-mode #switch:checked ~ .switch:after {
+  background: #d416de;
+  box-shadow: inset 0 -1px 8px rgba(0, 0, 0, 0.7),
+    inset 0 -2px 2px rgba(0, 0, 0, 0.2), 0 1px 0 white,
+    0 -1px 0 rgba(0, 0, 0, 0.5), -110px 32px 15px 13px rgba(0, 0, 0, 0.25);
+  /* Styles de gradient inchangés, mais pour le mode "dark" */
+  /* ... */
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.HEADER SECTION. 
+- navigation
+* ----------------------------------------------------------------------------------------
+*/
+
+.navpage__wrap {
+  padding: 25px;
+  display: flex;
+  justify-content: flex-end; /* Move the navigation to the right */
+}
+
+.navpage__wrap li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.navpage__wrap li a {
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  color: #181715;
+  z-index: 1;
+  padding: 5px 15px;
+  border-radius: 50px;
+}
+
+.dark-mode .navpage__wrap li a {
+  color: white;
+}
+
+.navpage__wrap li a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background: #181715;
+}
+.dark-mode .navpage__wrap li a:hover {
+  color: black;
+  background-color: white;
+}
+.navpage__wrap li a.activelink {
+  color: #ffffff;
+  background: #181715;
+}
+.dark-mode .navpage__wrap li a.activelink {
+  color: black;
+  background-color: white;
+}
+.navicon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 22;
+  border-radius: 25px;
+}
+
+.navicon__bar {
+  width: 18px;
+  height: 1px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+}
+
+.navicon__bar:before,
+.navicon__bar:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: #181715;
+}
+
+.navicon:hover .navicon__bar:before,
+.navicon:hover .navicon__bar:after {
+  background: #181715;
+}
+
+.navicon__bar:before {
+  transform: rotate(0deg) translate(0px, -4px);
+}
+
+.navicon__bar:after {
+  transform: rotate(0deg) translate(0px, 4px);
+}
+
+.navicon.active .navicon__bar:before {
+  transform: rotate(-45deg) translate(0px, 0px);
+}
+
+.navicon.active .navicon__bar:after {
+  transform: rotate(45deg) translate(0px, 0px);
+}
+
+.navicon.active:hover .navicon__bar .navicon__bar:before {
+  transform: rotate(0deg) translate(0px, 0px);
+}
+
+.navicon.active:hover .navicon__bar .navicon__bar:after {
+  transform: rotate(0deg) translate(0px, 0px);
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  top: -100%;
+  display: none;
+  background: #ffdb67;
+  padding: 80px 0 30px 0;
+  border-bottom: 1px solid #ddaa01;
+}
+
+.overlay__listnav {
+  padding: 0 0 0 20px;
+}
+
+.overlay__listnav li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.overlay__listnav li a {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  color: #181715;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.overlay__listnav li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background: #181715;
+}
+
+.openmenu .overlay {
+  display: block;
+  top: -1px;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 03.HERO SECTION. 
+* ----------------------------------------------------------------------------------------
+*/
+
+#sectionhero {
+  padding: 100px 0 0;
+}
+
+.infohero__p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 5px 20px;
+  color: #ffffff;
+  display: inline-block;
+  background: #8b0791;
+}
+
+.infohero__title {
+  font-size: 80px;
+  font-weight: 600;
+  text-shadow: 5px 5px #ddaa01;
+}
+.dark-mode .infohero__title {
+  color: white;
+  text-shadow: 5px 5px #8b0791;
+}
+
+.infohero__title span {
+  display: block;
+}
+
+.heroimg {
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+  position: relative; /* Ajout de la propriété position */
+}
+
+.heroimg:hover .heroimg__poto {
+  transform: rotate(360deg); /* Ajout de la rotation au survol */
+  transition: transform 1s ease; /* Ajout de la transition */
+}
+
+.heroimg .heroimg__poto {
+  border-radius: 100%;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  box-shadow: 20px 20px 1px 1px #ddaa01;
+  border: 7px solid;
+  transition: transform 1s ease; /* Ajout de la transition */
+}
+.dark-mode .heroimg .heroimg__poto {
+  box-shadow: 20px 20px 1px 1px white;
+  border: none white;
+}
+
+#typed-text {
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.dark-mode #typed-text {
+  color: white;
+}
+.infoabout__list {
+  display: flex; /* Ajout de la propriété flex pour aligner les éléments en ligne */
+}
+
+.infoabout__wrap .infoabout__title {
+  font-size: 27px; /* Modifier la taille des icônes selon vos préférences */
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-right: 20px; /* Espacement entre les icônes */
+}
+
+.herolink {
+  display: inline-block;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 04.ABOUT SECTION. 
+* ----------------------------------------------------------------------------------------
+*/
+
+#aboutsection {
+  height: auto;
+  background: #ffffff;
+  padding: 50px 0 0;
+}
+
+.abouthero h3 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #8b0791;
+}
+.infoabout__title.collapsed {
+  max-height: 200px;
+  overflow: hidden;
+}
+.infoabout__soustitle {
+  background: linear-gradient(to right, #8a2be2, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dark-mode .infoabout__title {
+  color: black;
+}
+.infoabout__button {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px 80px;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(to right, #d416de, black);
+  background-size: 200% auto;
+  transition: background-position 0.3s;
+}
+
+.infoabout__button:hover {
+  background-position: right center;
+}
+
+.infoabout__button:active {
+  background-position: 100% center;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 05.skills SECTION. 
+* ----------------------------------------------------------------------------------------
+*/
+
+#skillssection {
+  background: #ffdb67;
+  height: auto;
+  padding: 0 0 0;
+}
+.dark-mode #skillssection {
+  background-color: black;
+}
+
+.counterwrap {
+  text-align: center;
+}
+
+.counterwrap__counternum {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.wrapskills {
+  padding: 20px;
+}
+
+.wrapskills i {
+  font-size: 30px;
+  background: #ddaa01;
+  border-radius: 100%;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark-mode .wrapskills i {
+  background-color: #d416de;
+}
+.wrapskills__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.dark-mode .wrapskills__title {
+  color: white;
+}
+.skillssection h3 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #8b0791;
+}
+
+.btn-12,
+.btn-13 {
+  text-align: center;
+  display: inline-block;
+  padding: 15px 40px;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 20px;
+}
+.dark-mode .btn-12 {
+  color: white;
+}
+.dark-mode .btn-13 {
+  color: white;
+}
+.btn-12:before,
+.btn-13:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  background: black;
+  left: 45%;
+  height: 2px;
+  transition: all 0.3s;
+  opacity: 0.7;
+}
+.dark-mode .btn-12:before {
+  background: white;
+}
+.dark-mode .btn-13:before {
+  background: white;
+}
+.btn-12:hover:before {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.btn-13:hover:before {
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 06.Experiences SECTION. 
+* ----------------------------------------------------------------------------------------
+*/
+
+#experiencessection {
+  background: #ffffff;
+  height: auto;
+}
+
+#experienceswarp {
+  padding-top: 50px;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 1;
+}
+
+.grid-gutter-md {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.experienceswarp__item {
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  float: right;
+  padding: 10px;
+  width: 33.3333%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.experienceswarp__content {
+  border-radius: 5px;
+  height: 350px;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.experienceswarp__item:hover .Experiences__content {
+  background-color: #ddaa01;
+  opacity: 0.5;
+}
+
+.experienceswarp__portolink i {
+  position: absolute;
+  z-index: 1;
+  color: #181715;
+  opacity: 0;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+.experienceswarp__item:hover i {
+  opacity: 1;
+}
+
+#filterwrap {
+  padding: 0;
+  margin: 30px 0;
+}
+
+#filterwrap li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px;
+  padding: 5px 20px;
+  cursor: pointer;
+  border: none; /* Retirer le cadre */
+  color: #8b0791;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#filterwrap li.active {
+  color: black;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.CONTACT SECTION. 
+* ----------------------------------------------------------------------------------------
+*/
+
+#contactsection {
+  height: auto;
+  background: #ffdb67;
+  padding: 0 0 50px;
+}
+.dark-mode #contactsection {
+  background-color: black;
+}
+
+.contactdetail__title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #8b0791;
+}
+
+.contactdetail__list {
+  padding: 0;
+}
+
+.contactdetail__list li {
+  list-style: none;
+  position: relative;
+  margin: 20px 0;
+}
+
+.contactdetail__span {
+  font-weight: 600;
+}
+.dark-mode .contactdetail__span {
+  color: #d416de;
+}
+
+.contactdetail__sosmed {
+  padding: 0;
+}
+
+.contactdetail__sosmed li:first-child {
+  margin: 10px 10px 0 0;
+}
+
+.contactdetail__sosmed li {
+  list-style: none;
+  margin: 10px 10px 10px;
+  display: inline-block;
+}
+
+.contactdetail__sosmed li a {
+  color: #181715;
+  font-size: 30px;
+}
+.btn {
+  color: #fff;
+  background: linear-gradient(to right, black, #8b0791 );
+  background-size: 200% auto;
+  transition: background-position 0.3s;
+}
+
+.btn:hover {
+  background-position: right center;
+}
+
+.btn:active {
+  background-position: 100% center;
+}
+.dark-mode .btn{
+  color: black;
+  background: linear-gradient(to right, #8b0791,white );
+  background-size: 200% auto;
+  transition: background-position 0.3s;
+}
+.dark-mode .btn:hover {
+  background-position: right center;
+}
+
+.dark-mode .btn:active {
+  background-position: 100% center;
+}
+/* Ajoutez ce style CSS dans votre balise <style> ou fichier CSS externe */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+}
+.dark-mode .modal-content {
+color: black;
+}
+
+.modal-content {
+  background-color: #f9f9f9;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 800px;
+}
+
+
+.close-btn {
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
+/* Style CSS pour le conteneur flex dans la fenêtre modale */
+.modal-content__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style CSS pour le texte dans la fenêtre modale */
+#modalMessage {
+  flex: 0.9; /* Permet au texte de s'étendre pour occuper l'espace restant */
+  line-height: 1; /* Ajustez la hauteur de ligne pour un meilleur espacement entre les phrases */
+}
+
+/* Style CSS pour l'image dans la fenêtre modale */
+.modal-content__wrapper img {
+  max-width: 10%; /* Vous pouvez ajuster la largeur de l'image selon vos besoins */
+  margin-right: 5px;  /* Vous pouvez ajuster la marge pour créer de l'espace entre le texte et l'image */
+  margin-bottom: 10px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.FOOTER SECTION. 
+* ----------------------------------------------------------------------------------------
+*/
+.logofooter {
+  max-width: 70px;
+  display: block;
+  margin: 0 auto;
+}
+.dark-mode .logofooter {
+  background-color: white;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.DARK MODE. 
+* ----------------------------------------------------------------------------------------
+*/
